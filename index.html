@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Job.com connects skilled workers and contractors for helper, rigger, painter, welder and fitter jobs.">
+<title>Job.com | <span class="en">Jobs & Manpower</span><span class="hi">नौकरी और कामगार</span></title>
+<style>
+:root{--navy:#102a43;--blue:#1769aa;--orange:#ff9f1c;--light:#f3f7fb;--ink:#203040;--muted:#617386}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+header{background:var(--navy);color:#fff;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.logo{font-size:28px;font-weight:800;letter-spacing:-1px}.logo span{color:var(--orange)}
+nav{display:flex;gap:22px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:600;font-size:14px}nav a:hover{color:var(--orange)}
+.hero{padding:76px 5% 70px;background:linear-gradient(120deg,#102a43 0%,#1769aa 100%);color:white}
+.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:38px;align-items:center}
+.eyebrow{color:#ffd08a;text-transform:uppercase;letter-spacing:2px;font-weight:700;font-size:12px}
+h1{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:12px 0 18px;letter-spacing:-1.5px}
+.hero p{font-size:18px;color:#e6eef7;max-width:610px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:700;transition:.2s}
+.btn-primary{background:var(--orange);color:#182b3b}.btn-outline{border:1px solid #d8e5f2;color:#fff}.btn:hover{transform:translateY(-2px)}
+.hero-card{background:#fff;color:var(--ink);padding:25px;border-radius:16px;box-shadow:0 16px 45px #071b2d44}
+.hero-card h2{margin:0 0 8px;font-size:22px}.hero-card p{font-size:14px;color:var(--muted);margin:0 0 14px}
+.role{display:inline-block;background:#eaf3fc;color:#155b91;padding:8px 11px;margin:5px 4px 0 0;border-radius:7px;font-size:13px;font-weight:700}
+section{padding:64px 5%}.container{max-width:1100px;margin:auto}.section-head{text-align:center;max-width:700px;margin:0 auto 35px}.section-head h2{font-size:clamp(28px,4vw,38px);margin:0 0 10px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e1e9f0;border-radius:13px;padding:23px;background:#fff}.card .icon{font-size:27px}.card h3{margin:10px 0 6px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:14px}
+.alt{background:var(--light)}.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.step{display:flex;gap:15px;padding:22px;background:white;border-radius:12px;border:1px solid #e1e9f0}.num{flex:0 0 40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#dceeff;color:#14588d;font-weight:800}.step h3{margin:0 0 5px}.step p{margin:0;color:var(--muted);font-size:14px}
+.contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#d2dfec}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-box{padding:25px;border:1px solid #496176;border-radius:13px;background:#183750}.contact-box h3{margin-top:0}.contact-box a{color:#ffd08a;text-decoration:none;overflow-wrap:anywhere}.contact-box p{color:#e0e9f1}
+footer{padding:22px 5%;text-align:center;background:#0b2033;color:#c8d5e2;font-size:13px}
+@media(max-width:760px){.hero-inner,.cards,.steps,.contact-grid{grid-template-columns:1fr}.hero{padding-top:55px}.hero-card{max-width:520px}nav{gap:13px}.logo{font-size:24px}section{padding:48px 5%}}
+
+.lang-toggle{border:1px solid #ffd08a;background:transparent;color:#fff;border-radius:7px;padding:7px 10px;font-weight:700;cursor:pointer}
+.hi{display:none}
+body.hindi .en{display:none}
+body.hindi .hi{display:inline}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#" style="color:white;text-decoration:none">Job<span>.com</span></a>
+  <nav aria-label="Main navigation">
+    <a href="#jobs"><span class="en"><span class="en">Job Categories</span><span class="hi">काम की श्रेणियाँ</span></span><span class="hi">काम की श्रेणियाँ</span></a>
+    <a href="#how"><span class="en"><span class="en">How It Works</span><span class="hi">कैसे काम करता है</span></span><span class="hi">कैसे काम करता है</span></a>
+    <a href="#contact"><span class="en">Contact</span><span class="hi">संपर्क</span></a>
+    <button class="lang-toggle" id="langToggle" type="button">हिंदी</button>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow"><span class="en">Connecting workers & contractors</span><span class="hi">कामगारों और ठेकेदारों को जोड़ना</span></div>
+        <h1><span class="en">Find the right job.<br>Find the right people.</span><span class="hi">सही नौकरी पाएँ।<br>सही कामगार खोजें।</span></h1>
+        <p><span class="en">Job.com helps skilled workers connect with contractors looking for dependable manpower. Get in touch for job opportunities or staffing requirements.</span><span class="hi">Job.com कामगारों को ऐसे ठेकेदारों से जोड़ने में मदद करता है जिन्हें भरोसेमंद कर्मचारियों की ज़रूरत है। नौकरी या कामगारों की आवश्यकता के लिए संपर्क करें।</span></p>
+        <div class="actions">
+          <a class="btn btn-primary" href="tel:+917303898905"><span class="en">I'm Looking for a Job</span><span class="hi">मुझे नौकरी चाहिए</span></a>
+          <a class="btn btn-outline" href="mailto:pappuchauhan7303@gmail.com?subject=Manpower%20Requirement"><span class="en">I Need Workers</span><span class="hi">मुझे कामगार चाहिए</span></a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2><span class="en">Jobs & Manpower</span><span class="hi">नौकरी और कामगार</span></h2>
+        <p><span class="en">Contact us for opportunities and workforce requirements in these categories:</span><span class="hi">इन श्रेणियों में नौकरी या कामगारों की आवश्यकता के लिए संपर्क करें:</span></p>
+        <span class="role">Helper</span><span class="role">Rigger</span><span class="role">Painter</span><span class="role">Welder</span><span class="role">Fitter</span><span class="role">Grinderman</span>
+      </aside>
+    </div>
+  </section>
+  <section id="jobs">
+    <div class="container">
+      <div class="section-head"><h2><span class="en">Job Categories</span><span class="hi">काम की श्रेणियाँ</span></h2><p><span class="en">Whether you are searching for work or hiring skilled and general workers, let’s connect.</span><span class="hi">आप नौकरी खोज रहे हों या कामगार रखना चाहते हों, हमसे संपर्क करें।</span></p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">🦺</div><h3>Helper</h3><p>For general site support and assistance roles. Contact us to share your availability.</p></article>
+        <article class="card"><div class="icon">🪝</div><h3>Rigger</h3><p>For rigging manpower needs and job enquiries from experienced workers.</p></article>
+        <article class="card"><div class="icon">🖌️</div><h3>Painter</h3><p>Connect with contractors and workers for painting work opportunities.</p></article>
+        <article class="card"><div class="icon">🧰</div><h3>Welder</h3><p>Get in touch about welding vacancies or skilled manpower requirements.</p></article>
+        <article class="card"><div class="icon">🔧</div><h3>Fitter</h3><p>For fitter job enquiries and contractor staffing requirements.</p></article>
+        <article class="card"><div class="icon">⚙️</div><h3>Grinderman</h3><p>Connect for grinderman job enquiries and contractor manpower requirements.</p></article>
+        <article class="card"><div class="icon">🤝</div><h3>Contractor Support</h3><p>Contractors can contact us with the trade, number of workers and work location.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="alt" id="how">
+    <div class="container">
+      <div class="section-head"><h2><span class="en">How It Works</span><span class="hi">कैसे काम करता है</span></h2><p><span class="en">A simple way to start a conversation about your job or manpower needs.</span><span class="hi">नौकरी या कामगारों की ज़रूरत के बारे में बात शुरू करने का आसान तरीका।</span></p></div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div><h3>Call or email</h3><p>Contact us and tell us whether you need a job or workers.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>Share the details</h3><p>Workers can share their trade and experience. Contractors can share the role, headcount and location.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>Discuss requirements</h3><p>We’ll discuss the information and requirements you provide.</p></div></div>
+        <div class="step"><div class="num">4</div><div><h3>Stay in touch</h3><p>Use the contact details below for follow-up and updates.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head"><h2><span class="en">Contact Job.com</span><span class="hi">Job.com से संपर्क करें</span></h2><p><span class="en">Workers and contractors are both welcome to get in touch.</span><span class="hi">कामगार और ठेकेदार, दोनों संपर्क कर सकते हैं।</span></p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3><span class="en">📞 Call / WhatsApp</span><span class="hi">📞 कॉल / WhatsApp</span></h3><p><span class="en">For job enquiries and manpower requirements:</span><span class="hi">नौकरी और कामगारों की आवश्यकता के लिए:</span></p><p><a href="tel:+917303898905">7303898905</a></p><a class="btn btn-primary" href="https://wa.me/917303898905"><span class="en">Message on WhatsApp</span><span class="hi">WhatsApp पर संदेश भेजें</span></a></div>
+        <div class="contact-box"><h3><span class="en">✉️ Email</span><span class="hi">✉️ ईमेल</span></h3><p><span class="en">Send your job enquiry or contractor requirement by email:</span><span class="hi">अपनी नौकरी की जानकारी या कामगारों की आवश्यकता ईमेल से भेजें:</span></p><p><a href="mailto:pappuchauhan7303@gmail.com">pappuchauhan7303@gmail.com</a></p><a class="btn btn-outline" href="mailto:pappuchauhan7303@gmail.com?subject=Job.com%20Enquiry"><span class="en">Send an Email</span><span class="hi">ईमेल भेजें</span></a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Job.com · Connecting workers and contractors. <br>Job opportunities and hiring are subject to verification and agreement between the parties.</footer>
+
+<script>
+(function(){
+  const btn = document.getElementById('langToggle');
+  if (!btn) return;
+  btn.addEventListener('click', function(){
+    const hindi = document.body.classList.toggle('hindi');
+    btn.textContent = hindi ? 'English' : 'हिंदी';
+    document.documentElement.lang = hindi ? 'hi' : 'en';
+  });
+})();
+</script>
+</body>
+</html>
